@@ -35,11 +35,15 @@ describe('unit 1.5', function() {
   it('properly sorted camera list by rating', function() {
     element.all(by.tagName('option')).get(1).click();
     expect(element.all(by.css('div h3')).get(0).getText()).toBe('Canon EOS 70D');
+    expect(element.all(by.tagName('div p')).get(0).getText()).toBe('Price: $1,099.00');
+
   });
 
   it('properly sorted camera list by price', function() {
     element.all(by.tagName('option')).get(2).click();
     expect(element.all(by.tagName('div h3')).get(0).getText()).toBe('Nikon D3100 DSLR');
+    expect(element.all(by.tagName('div p')).get(0).getText()).toBe('Price: $369.99 ON SALE!!!');
+
   });
 
 
