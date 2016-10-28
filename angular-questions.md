@@ -56,3 +56,21 @@ Can you use more than one filter?
 
 We'll soon see how to create custom filters. What is a use case for a custom filter?
   Creating a filter that doesn't exist, but could benefit cleaner code with a predefined helper filter that makes your life easy
+
+What is the purpose of ng-init?
+  To initialize data inside of the HTML element so it wont come from the controller
+
+Why use ng-src and ng-href?
+  Putting handlebars in an src attribute doesnt work quite right, so just use ng-src to fix that. ng-href basically does the same thing.
+
+What are directives?
+  They're basically html tags that initialize an Angular action that start with 'ng-'
+
+Does ng-class require an object to be passed in?
+  No, but it does if you're trying to pass in multiple things
+
+What order does an ng-repeat display items in?
+  Top-Down
+
+How does ng-repeat handle duplicate data?
+  It doesn't like duplicate data, to fix that, add 'track by $index'.
